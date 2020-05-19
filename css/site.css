@@ -1,7 +1,7 @@
 body{
     background-image: url('../images/under-construction.png');
     background-size: cover;
-    background-color: #8DBFE8;
+    /* background-color: #8DBFE8; */
 }
 *{
     margin: 0px;
