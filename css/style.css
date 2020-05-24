@@ -1,11 +1,11 @@
-body {
+/* body {
   background-image: url("../images/under-construction.png");
   background-size: cover;
-  /* background-color: #8DBFE8; */
-}
+  background-color: #8DBFE8;
+} */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -14,7 +14,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: #386e9b;
+  /* background-color: #ba7453; */
   font-family: "Poppins", sans-serif;
 }
 
@@ -61,7 +61,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
@@ -70,7 +70,7 @@ nav {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #386e9b;
+    background-color: #ba7453;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,13 +84,13 @@ nav {
   .burger {
     display: block;
   }
-}
+} */
 
-.nav-active {
+/* .nav-active {
   transform: translateX(0%);
-}
+} */
 
-@keyframes navLinkFade {
+/* @keyframes navLinkFade {
   from {
     opacity: 0;
     transform: translateX(50px);
@@ -99,7 +99,7 @@ nav {
     opacity: 1;
     transform: translateX(0px);
   }
-}
+} */
 
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
@@ -109,4 +109,67 @@ nav {
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to left, #ba7453, #d1a984);
+  z-index: -1;
+}
+/* nav {
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  min-height: 10vh;
+  color: white;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+}
+
+#Logo-2 {
+  grid-column: 2/3;
+  font-size: 24px;
+}
+.hamburger {
+  justify-self: end;
+} */
+
+section {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.hero {
+  height: 60%;
+  width: 100%;
+  position: relative;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.headline {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  font-size: 35px;
+  transform: translate(-20%, -70%);
+  color: white;
+  z-index: 3;
+}
+.hero::after {
+  content: "";
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.3;
 }
