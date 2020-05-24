@@ -13,6 +13,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-top: 4vh;
   min-height: 8vh;
   /* background-color: #ba7453; */
   font-family: "Poppins", sans-serif;
@@ -42,18 +43,18 @@ nav {
   font-size: 20px;
 }
 
-.burger {
+/* .burger {
   display: none;
   cursor: pointer;
-}
+} */
 
-.burger div {
+/* .burger div {
   width: 25px;
   height: 3px;
   background-color: rgb(226, 226, 226);
   margin: 5px;
   transition: all 0.3s ease;
-}
+} */
 
 @media screen and (max-width: 768px) {
   .nav-links {
@@ -101,7 +102,7 @@ nav {
   }
 } */
 
-.toggle .line1 {
+/* .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
 .toggle .line2 {
@@ -109,7 +110,7 @@ nav {
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
-}
+} */
 .slider {
   position: absolute;
   top: 0;
